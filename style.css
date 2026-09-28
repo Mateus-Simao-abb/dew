@@ -1,3 +1,8 @@
+body
+{
+    padding: 20px;
+    margin: 20px;
+}
 h1
 {
     text-transform: uppercase;
@@ -10,6 +15,12 @@ p::first-letter
 }
 
 a:hover
+{
+    text-decoration: none;
+    opacity: 0.5;
+    
+}
+a
 {
     text-decoration: none;
 }
@@ -34,3 +45,26 @@ img
     margin: auto;
     max-width: 150px;
 }
+.banner
+{
+    background-image: url(./images/Background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80px;
+    padding: 40px;
+    color: whitesmoke;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.text-banner{
+    font-size: 25px;
+}
+.hide{
+    display: none;
+}
+.nav{
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
