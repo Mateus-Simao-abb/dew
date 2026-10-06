@@ -8,7 +8,74 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<table>
+    <header class="header">
+      <p class="title">Vendas de TVs e acessórios online</p>
+      <nav class="nav">
+        <ul>
+          <li>
+            <a class="menu" href="./products.html">Home</a>
+          </li>
+          <li>
+            <a class="menu" href="./category_tvs.html">TVs</a>
+          </li>
+          <li>
+            <a class="menu" href="./category_acessories.html">Acessories</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <ul class="products-list">
+      <li class="product">
+        <h3>Samsung</h3>
+
+        <figure>
+            <img class="product-img" src="./images/br-qled-qn90f-qn43qn90fagxzd-547920568.avif">
+        </figure>
+
+        <p class="price">
+            <strong>Preço:</strong>
+            <data value="2000">R$2.000,00</data>
+        </p>
+
+        <p class="installment">
+            <strong>Parcela</strong>
+            <data value="200">R$200,00</data>
+        </p>
+
+        <a
+            href="https://www.samsung.com/br/tvs/qled-tv/qn90f-43-inch-neo-qled-4k-mini-led-smart-tv-qn43qn90fagxzd/"
+            target="_blank"
+            rel="noopener norefereer"
+            >
+        </a>
+      </li>
+      <li>
+        <h3>LG</h3>
+
+        <figure>
+            <img class="product-img" src="./images/thum-1600x1062.avif">
+        </figure>
+
+        <p class="price">
+            <strong>Preço:</strong>
+            <data value="7000">R$7.000,00</data>
+        </p>
+
+        <p class="installment">
+            <strong>Parcela</strong>
+            <data value="700">R$700,00</data>
+        </p>
+
+        <a
+            href="https://www.lg.com/content/dam/channel/wcms/1-channel/br/ms/lgcom/2026/tv-audio-video/tv/oled/b6/gp1/gallery/65-b6/galeria-v2/1-oledb6psa-2010x1334.jpg/jcr:content/renditions/thum-1600x1062.jpeg?w=800"
+            target="_blank"
+            rel="noopener norefereer"
+            >
+        </a>
+      </li>
+    </ul>
+    <!--
+    <table>
     <caption>Lista de TVS disponíveis com preços e parcelamentos</caption>
 
     <thead> 
@@ -42,13 +109,54 @@
             <td>R$ 7.459,00</td>
             <td>R$ 6.159,00 em 12x</td>
             <td>
-                <a href=https://www.samsung.com/br/tvs/qled-tv/qn90f-43-inch-neo-qled-4k-mini-led-smart-tv-qn43qn90fagxzd/" target="_blank" rel="nooper noreferrer">Detalhes
+                <a href="https://www.lg.com/br/tvs-e-soundbars/oled/oled55b6psa/?region_id=NSV&utm_source=google-ads&utm_medium=cpc&utm_campaign=BR_MS_TV_BR_26_Q3_ICHERRY-OBS_shopping-tv_lg.com%2Fbr_conversion_NA_google-ads_SHOP_OTH_tROAS_PUR_AO&utm_content=20260812_tv-oledb6_tv-produtos_PUR&utm_term=shopping-tv-oledb6&gad_source=1&gad_campaignid=21467763016&gbraid=0AAAAABODz7L2GR_h0HRux099jNL54tvXH&gclid=EAIaIQobChMIjJSJrI2klwMVpV9IAB02ogKOEAQYASABEgKjGPD_BwE" target="_blank" rel="nooper noreferrer">Detalhes
 
                  </a>
             </td>
         </tr>
     </tbody>
     </table>
+    --> 
     <a href="./products.html">Voltar</a>
+    <form id="tv-request-form">
+        <fieldset>
+            <legend>Solicitação de modelo de TV</legend>
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Ex: Maria Silava" autocomplete="name" required />
+
+         <label for="email">email:</label>
+            <input type="text" id="email" name="email"  placeholder="Ex: maria@gmail.com" autocomplete="email" required />
+
+            <label for="modelo">Modelo de TV desejado</label>
+            <input type="text" id="modelo" name="modelo" placeholder="Escolha ou digite um modelo" required />
+
+            <datalist id="modelos-tv">
+                <option value="1">Samsung</option>
+                <option value="2">LG</option>
+            </datalist>
+
+            <button type="reset">Limpar formulário</button>
+            <button type="submit">Enviar solicitação</button>
+        </fieldset>
+    </form>
+<h2>Perguntas mais frequentes</h2>
+<details>
+    <summary>Como solicitar um modelo?</summary>
+    <p>
+        Para solicitar um modelo de televisão que não está no site, preencha o formulário acima.
+    </p>
+    <summary>Como funciona o envio do produto?</summary>
+    <p>
+        Nossa empresa possui o próprio sistema de entregas disponível gratuitamente para todo o Brasil.
+    </p>
+</details>
+<details>
+    <summary>Como funciona o envio do produto?</summary>
+    <p>
+        Nossa empresa possui o próprio sistema de entregas disponível gratuitamente para todo o Brasil.
+    </p>
+</details>
+
 </body>
 </html>
