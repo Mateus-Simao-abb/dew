@@ -1,6 +1,15 @@
 body
 {
     margin: 0px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    background: linear-gradient(135deg, #eef2ff 0%, #e0f2fe 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1f2937;
 }
 main {
     padding: 20px;
@@ -123,4 +132,75 @@ img
     border: 1px solid wheat;
     padding: 10px;
     text-align: center;
+}
+
+
+
+
+/* Formulário Styles */
+label {
+    width: 100%;
+    max-width: 360px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+input {
+    width: 100%;
+    max-width: 360px;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    background: #ffffff;
+    font-size: 1rem;
+    color: #1f2937;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.15);
+}
+
+button {
+    width: 100%;
+    max-width: 360px;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+    margin-top: 10px;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 12px 24px rgba(79, 70, 229, 0.25);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+#resultado {
+    width: 100%;
+    max-width: 360px;
+    margin-top: 18px;
+    text-align: center;
+    font-weight: 700;
+    color: #0f766e;
+    min-height: 24px;
+}
+
+input::placeholder {
+    color: #94a3b8;
 }
